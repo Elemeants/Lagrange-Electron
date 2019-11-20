@@ -14,11 +14,13 @@ module.exports = class LagrangeChart extends Component {
                 datasets: [{
                     label: 'F(x)',
                     data: [],
-                    borderWidth: 0.5,
+                    borderWidth: 1,
                     fill: false,
                     lineTension: 0,
                     borderColor: 'rgba(0, 0, 0, 0.6)',
-                    pointBorderWidth: 0.5
+                    pointBorderWidth: 0,
+                    pointRadius: 1,
+                    pointStyle: 'line'
                 }]
             },
             options: {
