@@ -1,7 +1,7 @@
 {
-  "name": "electron-test",
+  "name": "lagrange-electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lagrange interpolation made with ElectronJs",
   "main": "index.js",
   "scripts": {
     "postinstall": "install-app-deps",
@@ -9,8 +9,8 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "JPolanco",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^7.1.1",
     "electron-builder": "^21.2.0"
