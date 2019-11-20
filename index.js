@@ -19,7 +19,7 @@ function createWindow () {
   });
   win.setMenuBarVisibility(false);
   win.removeMenu();
-  win.loadFile('./index.html');
+  win.loadFile('index.html');
 
   win.on('closed', () => {
     win = null;

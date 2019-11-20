@@ -2,13 +2,13 @@
   "name": "lagrange-electron",
   "version": "1.0.0",
   "description": "Lagrange interpolation made with ElectronJs",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
     "postinstall": "install-app-deps",
-    "start": "npm install && npm run lint && electron ./src/",
+    "start": "npm install && npm run lint && electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "lint": "jshint ./src/"
+    "lint": "jshint . --exclude ./node_modules"
   },
   "author": "JPolanco",
   "license": "MIT",
