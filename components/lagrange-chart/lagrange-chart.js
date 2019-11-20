@@ -1,4 +1,4 @@
-const { Chart } = require('chart.js')
+const { Chart } = require('chart.js');
 const Component = require('../component');
 
 const tag = '#app-lagrange-chart';
@@ -75,4 +75,4 @@ module.exports = class LagrangeChart extends Component {
     clearPoints() {
         this.DataPoints = [];
     }
-}
+};

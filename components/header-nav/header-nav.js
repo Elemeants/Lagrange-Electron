@@ -15,4 +15,4 @@ module.exports = class HeaderNav extends Component {
             w.close();
         });
     }
-}
+};

@@ -1,8 +1,6 @@
 const fs = require('fs');
 
 module.exports = class Component {
-    templatePath = "";
-    componentTag = "";
     constructor( tag, templatePath ) {
         this.templatePath = templatePath;
         this.componentTag = tag;
@@ -17,4 +15,4 @@ module.exports = class Component {
         });
     }
     init() { console.log("Empty component"); }
-}
+};

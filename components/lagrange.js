@@ -48,4 +48,4 @@ module.exports = class Lagrange {
         }, 1);
         return output;
     }
-}
+};

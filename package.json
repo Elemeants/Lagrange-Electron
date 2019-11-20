@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "install-app-deps",
-    "start": "npm install && electron .",
+    "start": "npm install && npm run lint && electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "lint": "jshint . --exclude ./node_modules"
   },
   "author": "JPolanco",
   "license": "MIT",
   "devDependencies": {
     "electron": "^7.1.1",
-    "electron-builder": "^21.2.0"
+    "electron-builder": "^21.2.0",
+    "jshint": "^2.10.3"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",

@@ -60,7 +60,8 @@ module.exports = class DotsTable extends Component {
             table.innerHTML += template;
         });
     }
+    get interpolationResult() { return $('#interpolar-result')[0].value; }
     set interpolationResult (result) {
         $('#interpolar-result')[0].value = result;
     }
-}
+};
