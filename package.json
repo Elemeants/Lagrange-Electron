@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^7.1.1"
+    "electron": "^7.1.1",
+    "electron-builder": "^21.2.0"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -21,5 +25,11 @@
     "globals": [
       "$"
     ]
+  },
+  "build": {
+    "appId": "LagrangeInterpolation",
+    "win": {
+      "target": "NSIS"
+    }
   }
 }
