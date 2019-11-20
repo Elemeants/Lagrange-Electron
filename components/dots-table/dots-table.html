@@ -1,0 +1,41 @@
+<div id="options" class="mb-3">
+    <form class="row p-1">
+        <div class="col">
+            <div class="row pb-1">
+                <input id="input-x-value" type="number" class="form-control" placeholder="Valor X">
+            </div>
+            <div class="row">
+                <input id="input-y-value" type="number" class="form-control" placeholder="Valor Y">
+            </div>
+        </div>
+        <button id="btn-add-point" class="btn btn-primary btn-sm col ml-2" type="button">Agregar punto</button>
+    </form>
+    <div class="row p-1">
+        <div class="col">
+            <div class="row pb-1">
+                <input id="interpolar-value" type="number" class="form-control" placeholder="Interpolar">
+            </div>
+            <div class="row">
+                <input id="interpolar-result" type="number" class="form-control" placeholder="Resultado" disabled>
+            </div>
+        </div>
+        <button id="btn-interpolate-point" class="btn btn-primary btn-sm col ml-2" type="button">Interpolar</button>
+    </div>
+</div>
+<div style="height: 250px; overflow: scroll;" class="mb-2">
+    <table class="table table-hover table-sm">
+        <thead>
+        <tr style="text-align: center;">
+            <th scope="col">X</th>
+            <th scope="col">Y</th>
+        </tr>
+        </thead>
+        <tbody id="table-rows" style="text-align: center;">
+        </tbody>
+    </table>
+</div>
+
+<div class="row p-1">
+    <input id="input-delete-value" type="number" class="form-control col" placeholder="Punto en X">
+    <button id="btn-delete-point" class="btn btn-primary btn-sm ml-2 col" type="button">Eliminar</button>
+</div>
