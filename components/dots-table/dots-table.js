@@ -49,7 +49,7 @@ module.exports = class DotsTable extends Component {
     updateTable() {
         const table = $('#table-rows')[0];
         table.innerHTML = "";
-        this.dots.forEach((dot) => {
+        this.dots.sort((a, b) => a.x - b.x).forEach((dot) => {
             console.log(dot);
             const template = `
             <tr>
