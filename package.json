@@ -13,7 +13,7 @@
   "author": "JPolanco",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^7.1.1",
+    "electron": "^18.3.7",
     "electron-builder": "^21.2.0",
     "jshint": "^2.10.3"
   },
